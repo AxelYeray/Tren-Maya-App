@@ -1,32 +1,32 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Menú</a>
+      <a class="navbar-brand" href="/">Menú</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">tickets</a>
+            <a class="nav-link active" href="{% url 'tickets' %}">tickets</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Navegacion intuitiva</a>
+            <a class="nav-link active" href="{% url 'navegacion_i' %}">Navegacion intuitiva</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Guia turistica</a>
+            <a class="nav-link active" href="{% url 'guia_turistica' %}">Guia turistica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Imagenes de los puntos de interes</a>
+            <a class="nav-link active" href="#">Imagenes de los puntos de interes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Puntos de interes geolocalizados</a>
+            <a class="nav-link active" href="#">Puntos de interes geolocalizados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Galeria de imagenes</a>
+            <a class="nav-link active" href="#">Galeria de imagenes</a>
           </li>
         </ul>
       </div>
