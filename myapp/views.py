@@ -16,3 +16,15 @@ def navegacion_i(request):
 
 def guia_turistica(request):
     return render(request, "guia_turistica.html")
+
+
+def imagenes_puntos(request):
+    return render(request, "imagenes_puntos.html")
+
+
+def puntos_geo(request):
+    return render(request, "puntos_geo.html")
+
+
+def galeria(request):
+    return render(request, "galeria.html")

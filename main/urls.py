@@ -25,4 +25,7 @@ urlpatterns = [
     path("tickets/", views.tickets, name="tickets"),
     path("navegacion_i/", views.navegacion_i, name="navegacion_i"),
     path("guia_turistica/", views.guia_turistica, name="guia_turistica"),
+    path("imagenes_puntos/", views.imagenes_puntos, name="imagenes_puntos"),
+    path("puntos_geo/", views.puntos_geo, name="puntos_geo"),
+    path("galeria/", views.galeria, name="galeria"),
 ]
