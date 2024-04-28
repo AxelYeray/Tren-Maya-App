@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% load static %}
+
+<h1>Galería de imágenes</h1>
+{% for imagen in imagenes %}
+<img src="{{imagen.image.url }}" class="card-img-top" />
+{% endfor %}
+
+{% endblock %}

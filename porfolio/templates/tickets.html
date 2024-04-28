@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="container">
+    <h1>Compra de Tickets</h1>
+    <p>En esta sección podrás comprar tus tickets para el tren maya</p>
+    <p>Al momento de comprar tu ticket primero tienes que seleccionar el lugar de origen</p>
+    <p>Después seleccionar el lugar de destino</p>
+    <p>La fecha de salida</p>
+    <p>Y por último la cantidad de tickets que deseas comprar</p>
+    <a href="https://reservas.ventaboletostrenmaya.com.mx/" class="btn btn-primary">Comprar Tickets</a>
+</div>
+{% for imagen in imagenes %}
+<img src="{{imagen.image.url }}" class="card-img-top" />
+{% endfor %}
+{% endblock %}
