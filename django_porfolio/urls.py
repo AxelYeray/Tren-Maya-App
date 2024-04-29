@@ -27,6 +27,8 @@ urlpatterns = [
     path("blog/", include("blog.urls")),
     path("tickets/", views.tickets, name="tickets"),
     path("galeria/", views.galeria, name="galeria"),
+    path("guia/", views.guia, name="guia"),
+    path("puntos_interes/", views.puntos_interes, name="puntos_interes"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

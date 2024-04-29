@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% load static %}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #080808;
+        color: #f8f4f4;
+    }
+
+    section {
+        background-color: #030303;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #007bff;
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: #e8e4e4;
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<section>
+    <h2>Introducción</h2>
+    <p>Bienvenido a la aventura de viajar por el Tren Maya, una experiencia única que te lleva a través de paisajes espectaculares, ruinas antiguas, comunidades locales y una rica diversidad cultural en el sureste de México.</p>
+</section>
+
+<section>
+    <h2>¿Qué es el Tren Maya?</h2>
+    <p>El Tren Maya es un proyecto ferroviario que conectará los estados del sureste mexicano: Chiapas, Tabasco, Campeche, Yucatán y Quintana Roo. Esta iniciativa tiene como objetivo impulsar el turismo en la región, preservar el patrimonio cultural y promover el desarrollo sostenible.</p>
+</section>
+
+<section>
+    <h2>Destinos Destacados</h2>
+    <ol>
+        <li>
+            <h3>Palenque, Chiapas</h3>
+            <p>Sumérgete en la majestuosidad de la civilización maya explorando las ruinas de Palenque, rodeadas por exuberante vegetación tropical.</p>
+        </li>
+        <li>
+            <h3>Calakmul, Campeche</h3>
+            <p>Descubre la imponente reserva de la biosfera de Calakmul, hogar de una impresionante variedad de flora y fauna, así como de antiguas pirámides mayas.</p>
+        </li>
+        <li>
+            <h3>Mérida, Yucatán</h3>
+            <p>Sumérgete en la cultura yucateca explorando la encantadora ciudad colonial de Mérida, conocida por su arquitectura colonial, gastronomía única y festivales culturales.</p>
+        </li>
+        <li>
+            <h3>Chichén Itzá, Yucatán</h3>
+            <p>Maravíllate ante la grandeza de una de las Nuevas Maravillas del Mundo, la antigua ciudad maya de Chichén Itzá, con su famosa pirámide de Kukulcán.</p>
+        </li>
+        <li>
+            <h3>Tulum, Quintana Roo</h3>
+            <p>Relájate en las hermosas playas de Tulum y explora las ruinas de una ciudad costera maya con vista al mar Caribe.</p>
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h2>Consejos para Viajeros</h2>
+    <ul>
+        <li>Reserva con Anticipación</li>
+        <li>Empaca de Forma Inteligente</li>
+        <li>Respeta la Cultura Local</li>
+        <li>Sé Responsable con el Medio Ambiente</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Información Práctica</h2>
+    <ul>
+        <li>Cómo Llegar</li>
+        <li>Horarios y Tarifas</li>
+        <li>Alojamiento</li>
+        <li>Seguridad</li>
+    </ul>
+</section>
+{% endblock %}

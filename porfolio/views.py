@@ -21,3 +21,9 @@ def galeria(request):
     return render(
         request, "galeria.html", {"imagenes": imagenes}
     )  # Cambiado de 'imagen' a 'imagenes'
+
+def guia(request):
+    return render(request, "guia.html")
+
+def puntos_interes(request):
+    return render(request, "puntos_interes.html")

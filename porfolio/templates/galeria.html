@@ -3,9 +3,41 @@
 {% block content %}
 {% load static %}
 
+<style>
+    /* Define el tamaño máximo para las imágenes */
+    .card {
+        position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
+        text-align: center; /* Centra el texto dentro del contenedor */
+        background-color: black; /* Establece el color de fondo negro */
+        color: white; /* Cambia el color del texto a blanco */
+        margin-bottom: 20px; /* Agrega un espacio entre las tarjetas */
+    }
+
+    .card-img-top {
+        max-width: 100%; /* Establece un ancho máximo para las imágenes */
+        height: auto; /* Esto mantendrá la proporción de la imagen */
+    }
+
+    .card-title {
+        position: absolute; /* Posiciona el título de forma absoluta */
+        top: 2px; /* Coloca el título 10px desde la parte superior del contenedor */
+        width: 100%; /* Establece el ancho del título al 100% del contenedor */
+        margin: 0; /* Elimina cualquier margen que pueda tener el título */
+        padding: 0; /* Elimina cualquier relleno que pueda tener el título */
+    }
+</style>
+
 <h1>Galería de imágenes</h1>
-{% for imagen in imagenes %}
-<img src="{{imagen.image.url }}" class="card-img-top" />
-{% endfor %}
+<hr>
+<div class="row">
+    {% for imagen in imagenes %}
+    <div class="col-md-4">
+        <div class="card">
+            <h2 class="card-title">{{imagen.title}}</h2>
+            <img src="{{imagen.image.url }}" class="card-img-top" />
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
 {% endblock %}
